@@ -112,7 +112,7 @@ def printSlip(shop, currOrder): #generates a receipt in output.txt file and prin
             print ('*' * r_width, file=f)
         print ("\n\n" + "Thanks for shopping at \n" + shop.name, file=f)
 
-#    os.system("lp " + reciept_txt)
+    os.system("lp " + reciept_txt)
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=5000, debug=True)
